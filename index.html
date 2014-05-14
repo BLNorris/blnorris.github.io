@@ -1,13 +1,16 @@
 ---
-layout: default
+layout: none
 title: Brandon Norris
 ---
-
+<div id="jumbotron">
+  <img src="img/kitt2.jpg"></img>
+</div>
 <div id="home">
   <h1>Things I Made</h1>
-  <ul class="posts">
+  
+  <div class="posts row">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-  </ul>
+  </div>
 </div>
