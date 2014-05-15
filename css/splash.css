@@ -1,0 +1,15 @@
+body{
+  margin:0;
+}
+#jumbotron{
+  height:470px;
+  width:1266px;
+  display:block;
+  margin:0 auto;
+}
+#splash{
+  height:470px;
+  width:1266px;
+  margin:0 auto;
+  display:block;
+}
