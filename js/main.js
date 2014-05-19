@@ -25,7 +25,7 @@ $(document).ready(function() {
   //scrolling effect
   $("#dev_link").click(function() {
       $('html, body').animate({
-          scrollTop: $("#dev").offset().top
+          scrollTop: $("#dev").offset().top -50
       }, 2000);
   });
   $("#site_link").click(function() {
