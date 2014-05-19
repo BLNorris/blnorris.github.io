@@ -59,14 +59,18 @@ nav li{
 }
 
 #jumbotron{
-  height:470px;
+  text-indent:-9000px;
+  overflow:hidden;
+  height:720px;
   display:block;
   margin:0 auto;
-}
-#splash{
-  height:470px;
-  margin:0 auto;
-  display:block;
+  
+  background-image:url('/img/kitt_big2.jpg');
+  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 footer{

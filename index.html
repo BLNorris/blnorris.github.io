@@ -3,22 +3,37 @@ layout: main
 title: Brandon Norris
 ---
 <div id="jumbotron">
-  <img id="splash" src="img/kitt2.jpg"></img>
+Picture of me in a small car.
 </div>
 <nav>
   <ul>
     <a href="/"><li>Home</li></a>
-    <a href="about.html"><li>About</li></a>
+    <a href="#" id="dev_link"><li>Websites</li></a>
     <a href="resume.html"><li>Resume</li></a>
   </ul>
 </nav>
 <div id="nav-spacer"></div>
 <div id="home">
-  <h1>Things I Made</h1>
-  
-  <div class="posts row">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+  <div id="dev" class="flexslider">
+    <ul class="slides">
+      <li>
+        <a href="http://omawho.com">
+          <img src="/img/omawho.png"></img>
+        </a>
+      </li>
+      <li>
+        <a href="http://barbot.blnorris.com">
+          <img src="/img/barbot.png"></img>
+        </a>
+      </li>
+      <li>
+        <a href="http://flipbook-ocs.herokuapp.com">
+          <img src="/img/flipbook.png"></img>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div id="made">
+    
   </div>
 </div>

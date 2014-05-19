@@ -7,12 +7,25 @@ $(document).ready(function() {
     var $nav = $("nav");
     var $nav_spacer = $("#nav-spacer");
     current_position = $window.scrollTop();
-    if (current_position > 470) {
+    if (current_position > 720) {
       $nav.addClass("sticky");
       $nav_spacer.show();
-    } else if (current_position <= 470) {
+    } else if (current_position <= 720) {
       $nav.removeClass("sticky");
       $nav_spacer.hide();
     }
   });
+  
+
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+  
+  //scrolling effect
+  $("#dev_link").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#dev").offset().top
+      }, 2000);
+  });
+
 });
