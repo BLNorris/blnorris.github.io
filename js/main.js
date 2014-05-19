@@ -18,7 +18,8 @@ $(document).ready(function() {
   
 
   $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "slide",
+    controlNav: "thumbnails"
   });
   
   //scrolling effect
@@ -27,5 +28,9 @@ $(document).ready(function() {
           scrollTop: $("#dev").offset().top
       }, 2000);
   });
-
+  $("#site_link").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#site").offset().top
+      }, 2000);
+  });
 });

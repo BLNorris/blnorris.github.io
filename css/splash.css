@@ -112,3 +112,19 @@ footer{
   text-align:right;
   padding:20px;
 }
+
+#dev-header{
+  height:60px;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 50px;
+  line-height: 53px;
+  text-align:center;
+  
+}
+
+#dev{
+  width:85%;
+  margin:0 auto;
+}
