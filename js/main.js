@@ -1,24 +1,18 @@
 $(document).ready(function() {
   var $header, $video, $window;
   $window = $(window);
-  $video = $("#welcome video");
   $header = $("#welcome h1");
-  return $window.scroll(function() {
+  $window.scroll(function() {
     var current_position;
+    var $nav = $("nav");
+    var $nav_spacer = $("#nav-spacer");
     current_position = $window.scrollTop();
-    if (current_position > 30) {
-      $header.css({
-        top: 350 - ($window.scrollTop() * 1.75),
-        opacity: (90 - $window.scrollTop()) / 100
-      });
-    }
-    if (current_position <= 100) {
-      $video.css("top", current_position);
-    }
-    if (current_position > 720) {
-      return $("nav").addClass("sticky");
-    } else if (current_position <= 720) {
-      return $("nav").removeClass("sticky");
+    if (current_position > 470) {
+      $nav.addClass("sticky");
+      $nav_spacer.show();
+    } else if (current_position <= 470) {
+      $nav.removeClass("sticky");
+      $nav_spacer.hide();
     }
   });
 });
