@@ -113,6 +113,11 @@ footer{
   padding:20px;
 }
 
+#dev{
+  width:85%;
+  margin:50px auto;
+}
+
 #dev-header{
   height:60px;
   font-family: 'Droid Serif', serif;
@@ -124,7 +129,3 @@ footer{
   
 }
 
-#dev{
-  width:85%;
-  margin:0 auto;
-}
